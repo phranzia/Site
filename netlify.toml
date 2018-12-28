@@ -1,0 +1,10 @@
+[Settings]
+ID = "phranzia-www"
+
+[build]
+base = "/"
+publish = "public/"
+command = "hugo"
+
+[build.environment]
+    HUGO_VERSION="0.49"
