@@ -1,13 +1,13 @@
 +++
 image = "https://github.com/kishaningithub/hugo-creative-portfolio-theme/raw/master/exampleSite/static/img/portfolio/business-card.jpg"
-showonlyimage = true
-draft = false
-date = "2016-11-05T19:53:42+05:30"
+showonlyimage = true # when this is true, only image shows and no content
+draft = false # when this is true, image and content won't show up
+date = "2018-08-05T19:53:42+05:30"
 title = "Name of the work 5"
-weight = 5
 +++
 
 Fifth abundantly made Give sixth hath. Cattle creature i be don't them.
+# when showonlyimage is false, the text above <!--more--> will show up in the tile, but the text below will not. It will only show up on the page
 <!--more-->
 
 Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
