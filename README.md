@@ -13,4 +13,4 @@ TODO: fill in
     2. Review changes made
     3. Write a concise commit message
     4. Press "Commit to master" button on bottom left of app
-    5. The "Commit to master" button saves bulk changes locally. Save all changes to Github cloud with "Push to Github" button near upper-right hand corner of app
+    5. The "Commit to master" button saves bulk changes locally. Save all changes to Github cloud with "Push origin" button near upper-right hand corner of app
