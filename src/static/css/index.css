@@ -13,9 +13,9 @@ nav {
 /* 3D Perspective Card Carousel - https://dev.to/shantanu_jana/3d-image-slider-using-html-css-328b */
 #slider {
     position: relative;
-    width: 40%;
-    height: 20vw;
-    margin: 75px auto;
+    width: 18%;
+    height: 23vw;
+    margin: 60px auto;
     font-family: 'Helvetica Neue', sans-serif;
     perspective: 1400px;
     transform-style: preserve-3d;
@@ -25,7 +25,7 @@ nav {
     position: relative;
     top: 108%;
     left: 50%;
-    width: 18px;
+    width: 10px;
     height: 18px;
     margin: 0 15px 0 0;
     opacity: 0.4;
@@ -61,6 +61,22 @@ nav {
   
   /* Slider Functionality */
   
+  #slide2 {
+    margin-left: 90px;
+  }
+
+  #slide3 {
+    margin-left: 180px;
+  }
+
+  #slide4 {
+    margin-left: -180px;
+  }
+
+  #slide5 {
+    margin-left: -90px;
+  }
+
   /* Active Slide */
   #s1:checked ~ #slide1,
    #s2:checked ~ #slide2,
@@ -205,7 +221,7 @@ body {
     }
   }
   
-  body {
+  .autoplay-carousel {
     max-width: 37.5rem;
     margin: 0 auto;
     padding: 0 1.25rem;
