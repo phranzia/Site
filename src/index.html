@@ -1,30 +1,131 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="/static/css/index.css" />
-        <!-- Bootstrap -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    </head>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#">Features</a>
-            <a class="nav-item nav-link" href="#">Pricing</a>
-            <a class="nav-item nav-link disabled" href="#">Disabled</a>
-          </div>
+  <head>
+      <link rel="stylesheet" href="/static/css/index.css" />
+      <!-- Bootstrap -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="#">Features</a>
+        <a class="nav-item nav-link" href="#">Pricing</a>
+        <a class="nav-item nav-link disabled" href="#">Disabled</a>
+      </div>
+    </div>
+    </nav>
+    
+  <body>
+
+    <!-- Introduction -->
+    <h1 class="text-center">Learn Pharmacy</h1>
+    <p class="text-center"> Pharmacology flashcards that aren't boring </p>
+    <p class="text-center"> This is a cool site </p>
+    <!-- End - Introduction -->
+
+    <!-- 3D Perspective Carousel -->
+    <section id="slider">
+      <input type="radio" name="slider" id="s1" checked>
+      <input type="radio" name="slider" id="s2">
+      <input type="radio" name="slider" id="s3">
+      <input type="radio" name="slider" id="s4">
+      <input type="radio" name="slider" id="s5">
+    
+      <label for="s1" id="slide1"><img src="https://i.pinimg.com/originals/2b/de/de/2bdede0647e3cdf75b44ea33723201d9.jpg" alt=""></label>
+      <label for="s2" id="slide2"><img src="https://images6.alphacoders.com/462/thumb-1920-462371.jpg" alt=""></label>
+      <label for="s3" id="slide3"><img src="https://wallpaperaccess.com/full/1154341.jpg" alt=""></label>
+      <label for="s4" id="slide4"><img src="https://wallpapercave.com/wp/wp2634222.jpg" alt=""></label>
+      <label for="s5" id="slide5"><img src="https://images5.alphacoders.com/343/thumb-1920-343645.jpg" alt=""></label>
+    </section>
+    <!-- End - 3D Perspective Carousel -->
+
+    <!-- Flip cards -->
+    <h3>Hover over the image on a desktop to see the back</h3>
+    <h3>Click on the image on mobile to see the back</h3>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://via.placeholder.com/300" alt="Avatar" style="width:300px;height:300px;">
         </div>
-      </nav>
-    <body>
-        <h1>Learn Stuff</h1>
-        <p>
-            Welcome to my new site
-        </p>
-        <p>
-            This is a cool site
-        </p>
-    </body>
+        <div class="flip-card-back">
+          <h1>Content Header</h1> 
+          <p>Content Part I</p> 
+          <p>Content Part II</p>
+        </div>
+      </div>
+    </div>
+    <!-- End Flip cards -->
+
+    <!-- Autoplay carousel -->
+    <h1>CSS-only Carousel</h1>
+
+    <p>This carousel is created with HTML and CSS only.</p>
+    <section class="carousel" aria-label="Gallery">
+      <ol class="carousel__viewport">
+        <li id="carousel__slide1"
+            tabindex="0"
+            class="carousel__slide">
+          <div class="carousel__snapper">
+            <a href="#carousel__slide4"
+              class="carousel__prev">Go to last slide</a>
+            <a href="#carousel__slide2"
+              class="carousel__next">Go to next slide</a>
+          </div>
+        </li>
+        <li id="carousel__slide2"
+            tabindex="0"
+            class="carousel__slide">
+          <div class="carousel__snapper"></div>
+          <a href="#carousel__slide1"
+            class="carousel__prev">Go to previous slide</a>
+          <a href="#carousel__slide3"
+            class="carousel__next">Go to next slide</a>
+        </li>
+        <li id="carousel__slide3"
+            tabindex="0"
+            class="carousel__slide">
+          <div class="carousel__snapper"></div>
+          <a href="#carousel__slide2"
+            class="carousel__prev">Go to previous slide</a>
+          <a href="#carousel__slide4"
+            class="carousel__next">Go to next slide</a>
+        </li>
+        <li id="carousel__slide4"
+            tabindex="0"
+            class="carousel__slide">
+          <div class="carousel__snapper"></div>
+          <a href="#carousel__slide3"
+            class="carousel__prev">Go to previous slide</a>
+          <a href="#carousel__slide1"
+            class="carousel__next">Go to first slide</a>
+        </li>
+      </ol>
+      <aside class="carousel__navigation">
+        <ol class="carousel__navigation-list">
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide1"
+              class="carousel__navigation-button">Go to slide 1</a>
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide2"
+              class="carousel__navigation-button">Go to slide 2</a>
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide3"
+              class="carousel__navigation-button">Go to slide 3</a>
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide4"
+              class="carousel__navigation-button">Go to slide 4</a>
+          </li>
+        </ol>
+      </aside>
+    </section>
+    <!-- End - Autoplay carousel -->
+  </body>
 </html>
