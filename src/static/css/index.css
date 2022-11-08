@@ -405,3 +405,47 @@ body {
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
   }
   /* End - Autoplay Carousel */
+
+  /* TESTING */
+  .carousel3{
+      height: 800px; 
+      perspective: 250px;
+      background: #0a69ed;    
+      
+  }
+  .carousel3 .carousel-item {
+    width: 450px;
+    background: #fff;
+    padding: 50px;
+    height: auto;
+    text-align: center;
+      border-radius: 15px;
+  }
+  .img-area {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+    border: inset 8px deepskyblue;
+  }
+  .img-area img{
+    width: 100%;
+  }
+  .testi p {
+    color: #262626;
+    font-size: 18px;
+    line-height: 1.9;
+  }
+  .testi h4 {
+    font-size: 20px;
+    margin: 0;
+    color: #000;
+  }
+  .testi h5 {
+    font-size: 14px;
+    letter-spacing: 5px;
+    margin: 7px 0;
+  }
+  /* END TESTING */
+  
