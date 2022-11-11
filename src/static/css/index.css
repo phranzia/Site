@@ -17,24 +17,27 @@ body {
 }
 
 #introduction-text {
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: 200;
   color: white;
   letter-spacing: 1px;
+  margin-top: 30px;
 }
 
 #top-heading {
+  font-family: 'Jost', sans-serif;
+  font-size: 2.5em;
   font-weight: 600;
 }
 
 .all-cards-button {
   background-color: transparent;
   border: none;
-  padding: 5px 70px;
+  padding: 5px 60px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 200;
   margin: 5px 2px;
   cursor: pointer;
@@ -54,13 +57,19 @@ body {
     perspective: 1400px;
     transform-style: preserve-3d;
   }
+  /* Hide the carousel radio indicators at the top and bottom of carousel */
+  /* #slider input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  } */
   
   input[type=radio] {
     position: relative;
     top: 108%;
-    left: 50%;
-    width: 10px;
-    height: 18px;
+    left: 60%;
+    width: 7px;
+    height: 7px;
     margin: 0 15px 0 0;
     opacity: 0.4;
     transform: translateX(-83px);
@@ -73,6 +82,19 @@ body {
   
   input[type=radio]:checked {
     opacity: 1;
+  }
+
+  /* Make radio input white when selected */
+  input[type='radio']:checked:after {
+    width: 10px;
+    height: 10px;
+    top: -3;
+    border-radius: 15px;
+    position: relative;
+    background-color: white;
+    content: '';
+    display: inline-block;
+    visibility: visible;
   }
   
   #slider label,
