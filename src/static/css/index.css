@@ -19,9 +19,10 @@ body {
 /* 3D Perspective Card Carousel - https://dev.to/shantanu_jana/3d-image-slider-using-html-css-328b */
 #slider {
     position: relative;
-    width: 15%;
+    /* width: 50%; */
+    width: 20%;
     height: 20vw;
-    margin: 60px auto;
+    margin: 150px auto;
     font-family: 'Helvetica Neue', sans-serif;
     perspective: 1400px;
     transform-style: preserve-3d;
@@ -57,7 +58,7 @@ body {
     color: white;
     font-size: 70px;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 3px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -66,22 +67,6 @@ body {
   }
   
   /* Slider Functionality */
-  
-  #slide2 {
-    margin-left: 170px;
-  }
-
-  #slide3 {
-    margin-left: 350px;
-  }
-
-  #slide4 {
-    margin-left: -350px;
-  }
-
-  #slide5 {
-    margin-left: -170px;
-  }
 
   /* Active Slide */
   #s1:checked ~ #slide1,
@@ -100,9 +85,9 @@ body {
      #s4:checked ~ #slide5,
       #s5:checked ~ #slide1 {
     box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
-    transform: translate3d(20%, 0, -100px);
+    transform: translate3d(40%, 0, -100px);
   }
-  
+
   /* Next to Next Slide */
   #s1:checked ~ #slide3,
    #s2:checked ~ #slide4,
@@ -110,7 +95,7 @@ body {
      #s4:checked ~ #slide1,
       #s5:checked ~ #slide2 {
     box-shadow: 0 1px 4px rgba(0,0,0, 0.4);
-    transform: translate3d(40%, 0, -250px);
+    transform: translate3d(80%, 0, -250px);
   }
   
   /* Previous to Previous Slide */
@@ -120,7 +105,7 @@ body {
      #s4:checked ~ #slide2,
       #s5:checked ~ #slide3 {
     box-shadow: 0 1px 4px rgba(0,0,0, 0.4);
-    transform: translate3d(-40%, 0, -250px);
+    transform: translate3d(-80%, 0, -250px);
   }
   
   /* Previous Slide */
@@ -130,8 +115,45 @@ body {
      #s4:checked ~ #slide3,
       #s5:checked ~ #slide4 {
     box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
-    transform: translate3d(-20%, 0, -100px);
+    transform: translate3d(-40%, 0, -100px);
   }
+
+  /* when we're on slide 1, wrap slide 5 all the way to the right */
+  #s1:checked ~ #slide5 {
+    box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
+    transform: translate3d(160%, 0, -400px);
+  }
+
+  /* when we're on slide 1, wrap slide 4 to second from the right and second from the back */
+  #s1:checked ~ #slide4 {
+    box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
+    transform: translate3d(120%, 0, -300px);
+  }
+
+  /* when we're on slide 2, wrap slide 5 all the way to the right and the back */
+  #s2:checked ~ #slide5 {
+    box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
+    transform: translate3d(120%, 0, -400px);
+  }
+
+  /* when we're on slide 4, wrap slide 1 all the way to the left */
+  #s4:checked ~ #slide1 {
+    box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
+    transform: translate3d(-120%, 0, -400px);
+  }
+
+  /* when we're on slide 5, move slide 1 all the way to the left and the back */
+  #s5:checked ~ #slide1 {
+    box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
+    transform: translate3d(-160%, 0, -400px);
+  }
+
+  /* when we're on slide 5, move slide 2 to second from the left and second from the back */
+  #s5:checked ~ #slide2 {
+    box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
+    transform: translate3d(-120%, 0, -300px);
+  }
+  
 /* End - 3D Perspective Card Carousel */
 
 /* Flip Card */

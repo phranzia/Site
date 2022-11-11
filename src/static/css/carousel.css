@@ -44,3 +44,7 @@
       padding: 10px 5px;
       text-align: center;
   }
+
+  .top-section {
+    background: linear-gradient(to right, red , black, rgb(252, 202, 255));
+    }
