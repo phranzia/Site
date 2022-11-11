@@ -1,14 +1,18 @@
 <html>
   <head>
       <link rel="stylesheet" href="/static/css/index.css" />
-      <!-- Bootstrap THIS IS A PROBLEM FOR MATERIALIZE CAROUSEL-->
+      <!-- Bootstrap-->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <!-- Google fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap" rel="stylesheet">
     </head>
     
   <body>
     <div id = "top-section" >
       <!-- Nav bar -->
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -16,19 +20,19 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#">Features</a>
-            <a class="nav-item nav-link" href="#">Pricing</a>
-            <a class="nav-item nav-link disabled" href="#">Disabled</a>
+            <a class="nav-item nav-link" href="#">All Cards</a>
+            <!-- <a class="nav-item nav-link" href="#">Pricing</a> -->
+            <!-- <a class="nav-item nav-link" href="#">Disabled</a> -->
           </div>
         </div>
       </nav>
       <!-- END Nav bar -->
         
       <!-- Introduction -->
-      <div class = "text-center">
-        <h1>Drugs</h1>
+      <div class = "text-center" id="introduction-text">
+        <h1 id="top-heading">Drugs</h1>
         <p>Simply beautiful flashcards to learn all you need (and want) to know</p>
-        <p> This is a cool site </p>
+        <button class="all-cards-button">See All Cards</button>
       </div>
       <!-- End - Introduction -->
 
