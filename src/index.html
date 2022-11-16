@@ -3,6 +3,7 @@
       <link rel="stylesheet" href="/static/css/index.css" />
       <!-- Bootstrap-->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
       <!-- Google fonts -->
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,12 +19,14 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#">All Cards</a>
-            <!-- <a class="nav-item nav-link" href="#">Pricing</a> -->
-            <!-- <a class="nav-item nav-link" href="#">Disabled</a> -->
-          </div>
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">All Cards</a>
+            </li>
+          </ul>
         </div>
       </nav>
       <!-- END Nav bar -->
@@ -53,90 +56,7 @@
       </section>
       <!-- End - 3D Perspective Carousel -->
     </div> 
-    <!-- Flip cards -->
-    <h3>Hover over the image on a desktop to see the back</h3>
-    <h3>Click on the image on mobile to see the back</h3>
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="https://via.placeholder.com/300" alt="Avatar" style="width:300px;height:300px;">
-        </div>
-        <div class="flip-card-back">
-          <h1>Content Header</h1> 
-          <p>Content Part I</p> 
-          <p>Content Part II</p>
-        </div>
-      </div>
-    </div>
-    <!-- End Flip cards -->
-
-    <!-- Autoplay carousel -->
-    <div class="autoplay-carousel">
-      <h1>CSS-only Carousel</h1>
-
-      <p>This carousel is created with HTML and CSS only.</p>
-      <section class="carousel" aria-label="Gallery">
-        <ol class="carousel__viewport">
-          <li id="carousel__slide1"
-              tabindex="0"
-              class="carousel__slide">
-            <div class="carousel__snapper">
-              <a href="#carousel__slide4"
-                class="carousel__prev">Go to last slide</a>
-              <a href="#carousel__slide2"
-                class="carousel__next">Go to next slide</a>
-            </div>
-          </li>
-          <li id="carousel__slide2"
-              tabindex="0"
-              class="carousel__slide">
-            <div class="carousel__snapper"></div>
-            <a href="#carousel__slide1"
-              class="carousel__prev">Go to previous slide</a>
-            <a href="#carousel__slide3"
-              class="carousel__next">Go to next slide</a>
-          </li>
-          <li id="carousel__slide3"
-              tabindex="0"
-              class="carousel__slide">
-            <div class="carousel__snapper"></div>
-            <a href="#carousel__slide2"
-              class="carousel__prev">Go to previous slide</a>
-            <a href="#carousel__slide4"
-              class="carousel__next">Go to next slide</a>
-          </li>
-          <li id="carousel__slide4"
-              tabindex="0"
-              class="carousel__slide">
-            <div class="carousel__snapper"></div>
-            <a href="#carousel__slide3"
-              class="carousel__prev">Go to previous slide</a>
-            <a href="#carousel__slide1"
-              class="carousel__next">Go to first slide</a>
-          </li>
-        </ol>
-        <aside class="carousel__navigation">
-          <ol class="carousel__navigation-list">
-            <li class="carousel__navigation-item">
-              <a href="#carousel__slide1"
-                class="carousel__navigation-button">Go to slide 1</a>
-            </li>
-            <li class="carousel__navigation-item">
-              <a href="#carousel__slide2"
-                class="carousel__navigation-button">Go to slide 2</a>
-            </li>
-            <li class="carousel__navigation-item">
-              <a href="#carousel__slide3"
-                class="carousel__navigation-button">Go to slide 3</a>
-            </li>
-            <li class="carousel__navigation-item">
-              <a href="#carousel__slide4"
-                class="carousel__navigation-button">Go to slide 4</a>
-            </li>
-          </ol>
-        </aside>
-      </section>
-    </div>
-    <!-- End - Autoplay carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </body>
 </html>
